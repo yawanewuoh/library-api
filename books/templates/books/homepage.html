@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Home</title>
+    </head>
+    <body>
+        <h1>All books</h1>
+
+    {% for book in books %}
+        <ul>
+        <li>Title: {{ book.title }}</li>
+        <li>Subtitle: {{ book.subtitle }}</li>
+        <li>Author: {{ book.author }}</li>
+        <li>ISBN: {{ book.isbn }}</li>
+        </ul>
+
+        {% endfor %}
+    </body>
+</html>
